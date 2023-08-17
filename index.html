@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mineirinho Pães de Queijo</title>
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script src="js/scripts.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+        <!-- Progress Bar -->
+        <script src="js/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  
+      </head>
+    <body>
+        <header>
+            <div class="container" id="nav-container">
+                <!--add essa class-->
+                 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="img/logo.jpg" alt="T1 e 2M Agência"><div id="marca">Mineirinho</div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+                            <a class="nav-item nav-link" id="about-menu" href="#">Sobre nós</a>
+                            <a class="nav-item nav-link" id="services-menu" href="#">Produtos</a>
+                            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+                        </div>
+                    </div>
+                 </nav>
+            </div>
+        </header>
+        <main>
+            <a class="wpp-button" href="https://api.whatsapp.com/send?phone=5532991294544&text=SUA_MENSAGEM" target="_blank">
+               <img src="img/whatsapp.webp">
+              </a>
+            <div class="container-fluid">
+                <!--slider-->
+                <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainSlider" data-slide-to="0"class="active"></li>
+                        <li data-target="#mainSlider" data-slide-to="1"></li>
+                        <li data-target="#mainSlider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/paodequeijoslider1.jpeg" class="d-block w-100" alt="Projetos de e-commerce">
+
+                            <!--tirar classe d-nome-->
+
+                            <div class="carousel-caption d-md-block">
+                                <h2>"Um é pouco. Dois é bom. Três é sensacional!"</h2>
+                                <p>Experimente nossos produtos!</p>
+                                <a href="#" class="main-btn">Ver produtos</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/paodequeijoslider2.webp" class="d-block w-100" alt="Engenharia de software">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Está querendo fazer uma encomenda?</h2>
+                                <p>Conte conosco, temos diversos sabores de pão de queijo.</p>
+                                <a href="#" class="main-btn">Entre em contato conosco</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/paodequeijoslider3.jpg" class="d-block w-100" alt="Manutenção em software" id="sliderimg2">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Um trabalho feito entre família.</h2>
+                                <p>Com o cuidado que só a familha tem.</p>
+                                <a href="#" class="main-btn">Ver Cardápio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">next</span>
+                    </a>
+                </div>
+                <!--Sobre a empresa-->
+                <div id="about-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="main-title">Sobre a empresa</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="img/mineirinho.jpg" alt="Agência T1 e 2M">
+                            </div>
+                            <div class="col-md-6 about-text">
+                                <h3 class="about-title">Uma agência que pensa no futuro</h3>
+                                <p id="textabout">Aqui na Mineirinho desde 1998, Pães de Queijo
+                                    são feitos artesanalmente com ingredientes selecionados
+                                    para garantir qualidade e sabor inconfundíveis aos nossos produtos.</p> 
+                                <p> Uma variedade de sabores para melhor
+                                    atender o gosto do cliente  esperamos
+                                    colher fruto dessa grande parceria com
+                                    uma explosão de amor e sabor gerando sua satisfaçao.
+                                    </p>
+                                <p>
+                                    Com a missão  Desenvolver, produzir e comercializar produtos de qualidade, garantir a excelência no atendimento aos nossos clientes mantendo sempre a tradição do nosso pao de queijo
+                                </p>
+                                <p>Veja outros diferenciais:</p>
+                                    <ul id="about-list">
+                                        <li><i class="fas fa-check"></i>Produtos de qualidade</li>
+                                        <li><i class="fas fa-check"></i>trabalho feito entre família</li>
+                                        <li><i class="fas fa-check"></i>excelência no atendimento</li>
+                                        <li><i class="fas fa-check"></i>verdadeiro sabor de queijo</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Serviços da empresa-->
+                    <div id="services-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="main-title">Nossas especialidades</h3>
+                                </div>
+                                <div class="col-md-4 service-box" service-box>
+                                    <img id="img-form" src="img/quejo1.jpg">
+                                    <h4>Tradicional</h4>
+                                    <p>Deliciosos pãezinhos de queijo quentinhos, com uma casquinha crocante por fora e um interior macio e saboroso, feitos com queijo de alta qualidade e uma receita tradicional que ressalta o sabor característico desse clássico brasileiro.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 service-box">
+                                    <img id="img-form" src="img/quejo4.jpg">
+                                    <h4>Com bacon</h4>
+                                    <p>Uma combinação irresistível! Esses pãezinhos de queijo são recheados com pedacinhos crocantes de bacon defumado, proporcionando um contraste perfeito entre o salgado do bacon e o sabor único do queijo derretido.
+                                    </p>
+                                </div>
+                                <div class="col-md-4 service-box">
+                                    <img id="img-form" src="img/quejo2.jpeg">
+                                    <h4>Mais queijo</h4>
+                                    <p>Para os amantes de queijo, essa opção é um verdadeiro deleite. Esses pãezinhos de queijo são preparados com uma generosa porção de queijo extra, resultando em uma explosão de sabor que derrete na boca a cada mordida.</p>
+                                </div>
+                                <div class="col-md-4 service-box">
+                                    <img id="img-form" src="img/quejo3.jpeg">
+                                    <h4>Integral</h4>
+                                    <p> Uma versão saudável e nutritiva do clássico pão de queijo. Feitos com uma combinação de polvilho integral e farinha de trigo integral, esses pãezinhos são ricos em fibras e mantêm todo o sabor e textura que você espera, mas com um toque mais saudável.</p>
+                                </div>
+                                <div class="col-md-4 service-box">
+                                    <img id="img-form" src="img/quejo5.jpg">
+                                    <h4>Goiabada</h4>
+                                    <p>Uma combinação irresistível entre o salgado e o doce. Esses pãezinhos de queijo são recheados com goiabada cremosa, criando uma harmonia perfeita de sabores entre a massa quente e o doce suave da goiabada.</p>
+                                </div>
+                                <div class="col-md-4 service-box">
+                                    <img id="img-form" src="img/quejo6.jpg">
+                                    <h4>Frango</h4>
+                                    <p> Uma opção deliciosa para os amantes de frango. Esses pãezinhos de queijo são recheados com pedaços suculentos de frango temperado, que conferem um sabor incrível e uma textura ainda mais especial a cada mordida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Dados da empresa-->
+                    <div id="data-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6 circle-box">
+                                    <div id="circleA"></div>
+                                    <p>Pedidos por dia</p>
+                                </div>
+                                <div class="col-md-3 col-xs-6 circle-box">
+                                    <div id="circleB"></div>
+                                    <p>Clientes Felizes</p>
+                                </div>
+                                <div class="col-md-3 col-xs-6 circle-box">
+                                    <div id="circleC"></div>
+                                    <p>Colaboradores</p>
+                                </div>
+                                <div class="col-md-3 col-xs-6 circle-box">
+                                    <div id="circleD"></div>
+                                    <p>Entregas Realizadas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--Time
+                    <div id="team-area">
+                       <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="main-title">Nossa Equipe</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="img/profile1.jpg" class="card-img-top" alt="Imagem de Perfil 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jhon Jhon</h5>
+                                            <p class="card-text">Software Developper</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Maria Marina</h5>
+                                            <p class="card-text">SEO Consultant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="img/profile3.jpg" class="card-img-top" alt="Imagem de Perfil 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Paulo Vitor</h5>
+                                            <p class="card-text">Project Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="img/profile4.jpg" class="card-img-top" alt="Imagem de Perfil 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Katarina Katrina</h5>
+                                            <p class="card-text">UX/UI Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                       </div> 
+                       <!--Trabalhe conosco
+                       <div id="apply-area">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 apply-box" id="company-img"></div>
+                                <div class="col-md-6 apply-box" id="pattern-img">
+                                    <h4>Gosta de desafios?</h4>
+                                    <p>Temos várias posições abertas, entre alas: Software Egineer, UI/UX Designer, Project Manager e mais.</p>
+                                    <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+                                    <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.</p>
+                                    <a href="#" class="main-btn" id="apply-btn">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      Portfólio
+                      <div id="portfolio-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="main-title">Conheça nossos projetos</h3>
+                                </div>
+                                <div class="col-md-12" id="filter-btn-box">
+                                    <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                                    <button class="main-btn filter-btn active" id="dev-btn">Desenvolvimento</button>
+                                    <button class="main-btn filter-btn active" id="dsg-btn">Design</button>
+                                    <button class="main-btn filter-btn active" id="seo-btn">SEO</button>
+                                </div>
+                                <div class="col-md-4 project-box dev">
+                                    <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                                </div>
+                                <div class="col-md-4 project-box dsg">
+                                    <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+                                </div>
+                                <div class="col-md-4 project-box seo">
+                                    <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+                                </div>
+                                <div class="col-md-4 project-box dev">
+                                    <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                                </div>
+                                <div class="col-md-4 project-box dsg">
+                                    <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+                                </div>
+                                <div class="col-md-4 project-box seo">
+                                    <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      Call to Action-->
+                      <div id="call-area">
+                        <div class="container">
+                            <div class="row">
+                                <p>Deseja fazer uma encomenda ou consultar valores?</p>
+                                <a href="https://api.whatsapp.com/send?phone=5532991294544&text=SUA_MENSAGEM" target="_blank">
+                                    <button class="main-btn" id="call-btn" >Encomendar agora</button>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--Rodapé-->
+        <footer>
+            <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Mande mensagem para:</span> (32)99129-4544</p>
+                        <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> mineirinhopaodequeijo1998@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha Tomar um café:</span><br>Monsenhor Ferre 54 democrata Juiz de fora Minas Gerais CEP 36035310</p>
+                    </div>
+                   <!--<div class="col-md-6" id="contact-form">
+                        <p>Ou nos deixe uma mensagem:</p>
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn">
+                        </form>
+                    </div>--> 
+                </div>
+            </div>
+        </div>
+            <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-12">
+                            <p>Desenvolvimento por <a href="https://www.prozeducacao.como.br" target="_blank"></a>&copy; 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Scripts do projeto-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
